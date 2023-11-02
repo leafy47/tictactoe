@@ -1,0 +1,55 @@
+.main {
+    background-color: bisque;
+    height: 900px;
+    width: 900px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+#board {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 10px;
+    height: 850px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#board > div {
+    background: white;
+    border: 1px solid rgb(100, 26, 238);
+  }
+
+.square {
+    color: red;
+    text-align: center;
+    font-size: 220px;
+  }
+
+#console {
+  background-color: black;
+  width: 900px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#log {
+  background-color: white;
+  height: 40px;
+  width: 300px;
+  padding: 5px;
+  font-size: 35px;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 40px;
+}
