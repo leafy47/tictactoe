@@ -25,7 +25,7 @@ const game = (function () {
                 (gameBoard.boardstyle[6] === gameBoard.boardstyle[7] && gameBoard.boardstyle[7] === gameBoard.boardstyle[8]) ||
                 (gameBoard.boardstyle[0] === gameBoard.boardstyle[4] && gameBoard.boardstyle[4] === gameBoard.boardstyle[8]) ||
                 (gameBoard.boardstyle[2] === gameBoard.boardstyle[4] && gameBoard.boardstyle[4] === gameBoard.boardstyle[6])) {
-                    order == true ? log.textContent = "Player 1 Wins": log.textContent = 'Player 2 Wins';
+                    order == true ? log.textContent = "Player 2 Wins": log.textContent = 'Player 1 Wins';
                     let squares = Array.from(document.getElementsByClassName('square'));
                     squares.forEach(element => {
                         element.removeEventListener('click', game.clicker);
